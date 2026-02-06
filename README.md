@@ -17,6 +17,7 @@ Version-Aware Logic: Automatically detects currently installed Sysmon versions a
 Service & Driver Management: Gracefully handles the stopping and uninstallation of Sysmon64 and SysmonDrv services to prevent file-lock errors.
 
 Deep Registry Hygiene: Targets and cleans specific HKLM registry paths (CurrentControlSet/Services) to ensure a "clean-slate" installation, preventing common configuration corruption.
+
 Automated Logging: Utilizes Tee-Object to provide real-time console feedback while maintaining an audit trail in $env:TEMP\SysmonUpdate.log.
 
 Environment Virtualization: Creates and destroys a temporary execution environment to ensure no residue files are left on the host system post-deployment.
