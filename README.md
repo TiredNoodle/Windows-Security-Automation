@@ -6,6 +6,10 @@ This repository contains a robust, version-aware PowerShell framework designed t
 Unlike standard installers, this script implements a state-management logic to ensure version consistency, handle service-level conflicts, and perform deep-registry hygiene during the update process.
 
 
+
+
+
+
 🚀 Key Features
 
 Version-Aware Logic: Automatically detects currently installed Sysmon versions and compares them against a remote repository to determine if an update is required.
@@ -18,6 +22,7 @@ Automated Logging: Utilizes Tee-Object to provide real-time console feedback whi
 Environment Virtualization: Creates and destroys a temporary execution environment to ensure no residue files are left on the host system post-deployment.
 
 
+
 🛠️ Technical Stack
 
 Language: PowerShell 5.1+
@@ -25,11 +30,16 @@ Targets: Windows 10/11, Windows Server 2016/2019/2022
 Security Focus: EDR/SIEM telemetry optimization (Sysmon)
 
 
+
+
+
+
 📖 Usage
 
 Place your Sysmon64.exe and .xml config in a network share or local repository.
 Update the $ExternalSysmonPath and $SysmonXmlFilePath variables.
 Run the script with Administrative privileges.
+
 
 
 📝 Author's Note
